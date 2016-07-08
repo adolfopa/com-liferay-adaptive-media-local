@@ -12,7 +12,7 @@
  * details.
  */
 
-package com.liferay.adaptive.media.document.library.repository;
+package com.liferay.adaptive.media.document.library.internal.repository;
 
 import com.liferay.portal.kernel.repository.DocumentRepository;
 import com.liferay.portal.kernel.repository.RepositoryConfiguration;
@@ -26,7 +26,6 @@ import com.liferay.portal.repository.registry.RepositoryClassDefinitionCatalog;
 import com.liferay.portal.repository.registry.RepositoryClassDefinitionCatalogUtil;
 
 import java.lang.reflect.Field;
-
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
