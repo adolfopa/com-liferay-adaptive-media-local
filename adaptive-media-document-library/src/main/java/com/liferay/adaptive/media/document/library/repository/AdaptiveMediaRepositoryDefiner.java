@@ -54,13 +54,13 @@ public class AdaptiveMediaRepositoryDefiner
 		restoreOverridenRepositoryDefiner(_CLASS_NAME);
 	}
 
-	private void _createAdaptiveImages(FileEntry fileEntry) {
+	private void _createAdaptiveMedia(FileEntry fileEntry) {
 	}
 
-	private void _deleteAdaptiveImages(FileEntry fileEntry) {
+	private void _deleteAdaptiveMedia(FileEntry fileEntry) {
 	}
 
-	private void _updateAdaptiveImages(FileEntry fileEntry) {
+	private void _updateAdaptiveMedia(FileEntry fileEntry) {
 	}
 
 	private static final String _CLASS_NAME =
@@ -74,15 +74,15 @@ public class AdaptiveMediaRepositoryDefiner
 
 			repositoryEventRegistry.registerRepositoryEventListener(
 				RepositoryEventType.Add.class, FileEntry.class,
-				AdaptiveMediaRepositoryDefiner.this::_createAdaptiveImages);
+				AdaptiveMediaRepositoryDefiner.this::_createAdaptiveMedia);
 
 			repositoryEventRegistry.registerRepositoryEventListener(
 				RepositoryEventType.Update.class, FileEntry.class,
-				AdaptiveMediaRepositoryDefiner.this::_updateAdaptiveImages);
+				AdaptiveMediaRepositoryDefiner.this::_updateAdaptiveMedia);
 
 			repositoryEventRegistry.registerRepositoryEventListener(
 				RepositoryEventType.Delete.class, FileEntry.class,
-				AdaptiveMediaRepositoryDefiner.this::_deleteAdaptiveImages);
+				AdaptiveMediaRepositoryDefiner.this::_deleteAdaptiveMedia);
 		}
 
 	}
